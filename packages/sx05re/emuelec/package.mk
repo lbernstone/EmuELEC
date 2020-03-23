@@ -32,7 +32,7 @@ fi
 
 # These packages are only meant for S922x, S905x2 and A311D devices as they run poorly on S905, S912, etc" 
 if [ "$PROJECT" == "Amlogic-ng" ]; then
-PKG_DEPENDS_TARGET+=" $LIBRETRO_S922X_CORES mame2016"
+PKG_DEPENDS_TARGET+=" $LIBRETRO_S922X_CORES "
 fi
 
 make_target() {

@@ -103,6 +103,10 @@
   # Windowmanager to use (fluxbox / none)
     WINDOWMANAGER="none"
 
+  # build and install vulkan graphics support (yes / no)
+    VULKAN_SUPPORT="yes"
+    VULKAN_TESTS_SUPPORT="yes"
+
   # Xorg Graphic drivers to use (all / i915,i965,r200,r300,r600,nvidia,nouveau)
   # Space separated list is supported,
   # e.g. GRAPHIC_DRIVERS="i915 i965 r300 r600 radeonsi nvidia nouveau"
@@ -155,7 +159,7 @@
   # additional packages to install:
   # Space separated list is supported,
   # e.g. ADDITIONAL_PACKAGES="PACKAGE1 PACKAGE2"
-    ADDITIONAL_PACKAGES="u-boot-script dtc u-boot-tools-aml CoreELEC-Debug-Scripts inject_bl301 ceemmc"
+    ADDITIONAL_PACKAGES="u-boot-script dtc u-boot-tools-aml CoreELEC-Debug-Scripts inject_bl301 ceemmc libvulkan"
 
   # add OOTB support for IR remote
     IR_REMOTE_KEYMAPS="$IR_REMOTE_KEYMAPS odroid"

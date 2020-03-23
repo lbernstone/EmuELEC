@@ -1,0 +1,15 @@
+--- a/CMakeLists.txt	2020-03-13 12:59:26.004313645 -0600
++++ b/CMakeLists.txt	2020-03-13 13:00:34.121575745 -0600
+@@ -100,9 +100,9 @@
+ endif()
+ 
+ if(UNIX AND NOT APPLE) # i.e.: Linux
+-    option(BUILD_WSI_XCB_SUPPORT "Build XCB WSI support" ON)
+-    option(BUILD_WSI_XLIB_SUPPORT "Build Xlib WSI support" ON)
+-    option(BUILD_WSI_WAYLAND_SUPPORT "Build Wayland WSI support" ON)
++    option(BUILD_WSI_XCB_SUPPORT "Build XCB WSI support" OFF)
++    option(BUILD_WSI_XLIB_SUPPORT "Build Xlib WSI support" OFF)
++    option(BUILD_WSI_WAYLAND_SUPPORT "Build Wayland WSI support" OFF)
+ 
+     if(BUILD_WSI_XCB_SUPPORT)
+         find_package(XCB REQUIRED)
